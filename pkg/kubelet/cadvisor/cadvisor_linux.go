@@ -52,7 +52,7 @@ var _ Interface = new(cadvisorClient)
 const statsCacheDuration = 2 * time.Minute
 const maxHousekeepingInterval = 15 * time.Second
 const defaultHousekeepingInterval = 10 * time.Second
-const allowDynamicHousekeeping = true
+const allowDynamicHousekeeping = false
 
 func init() {
 	// Override cAdvisor flag defaults.
